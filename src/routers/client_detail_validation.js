@@ -29,7 +29,7 @@ router.post("/responses", async(req, res) => {
 
         //await save_in_sheets(req);
 
-        //send_text_message(req.body);
+        send_text_message(req.body);
         console.log("message sent!!");
     } catch (e) {
         res.status(400).send(e);
